@@ -9,15 +9,14 @@ exports.run = (client, message) => {
     )
     .setDescription(
       `Toplamda Botta **${client.commands.size}** Adet Komut Bulunuyor!` +
-        "\n\n `m!botbilgi`= **Yazarak Botun İstatistiklerine Ulaşa Bilirsiniz.** \n `m!davet`= **Yazarak Botun Davet Linkini Alırsınız. \n `m!oyver`= Botumuza Oy verebilirsin**"
+        "\n\n `m!botbilgi`= **Yazarak Botun İstatistiklerine Ulaşa Bilirsiniz.**"
     )
     .addField(
       `:boom:➤ Komutlar`,
       `
  
-:white_small_square: | **m!eğlence:** Eğlence Menüsüne Bakarsınız.
-:white_small_square: | **m!moderasyon:** Botun Moderasyon Komutlarına Bakarsınız
-:white_small_square: | **m!logomenü:** Botun Logo YAPMA Komutlarına Bakarsınız.
+
+:white_small_square: | **m!logomenü:** Kendinize özel logo yapma komutlarını gösterir
 
 
 `)
@@ -27,7 +26,6 @@ exports.run = (client, message) => {
     .addField(
       ` :boom: Bilgilendirme`,
       `
-:white_small_square: | **mays Bot Her Gün Güncelleniyor!**.
 :white_small_square: | **Botu Ekleyerek Bize Destek Çıkmış Olursunuz.** `
     )
   
