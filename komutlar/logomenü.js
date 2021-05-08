@@ -6,11 +6,11 @@ exports.run = async (client, message, args) => {
 
 const eğlence = new Discord.MessageEmbed()
 .setColor("RANDOM")
-.setAuthor(" Mays v12 sürümüyle sizlerle")
-.setTitle(" ➤Mays logo menüsü komutları" )
+.setAuthor("Bot v12 Sürümüyle Sizlerle")
+.setTitle("logo menü komutları ( Türkçe Karakter Kullanmayınız )" )
  .setTimestamp()
-.setDescription(" **m!altın** \n **m!anime** \n **m!arrow** \n **m!banner**   \n **m!green** \n  **m!habbo** \n **m!kalın** \n  **m!neonmavi** \ ")
-.setImage("https://cdn.discordapp.com/attachments/790999702765961258/791798016583008297/wp2490739.png")
+.setDescription("**n!alev** : Alev Logo Yapar \n **n!altın** : Altın Logo Yapar \n **n!anime** : Anime Logo Yapar \n **n!arrow** : Arrow Logo Yapar \n **n!banner** : Banner Logo Yapar  \n **n!basit** : Basit Logo Yapar \n  **n!elmas** : Elmas Logo Yapar \n **n!green** : Green Logo Yapar \n  **n!habbo** Hobbo Logo Yapar \n **n!kalın** : Kalın Logo Yapar \n  **n!neonmavi** : NeonMavi Logo Yapar \n **n!sarı** : Sarı Logo Yapar \n ")
+.setImage("https://cdn.discordapp.com/attachments/834125768787099719/834162663993901126/standard.gif")
 message.channel.send(eğlence)
 }
 
