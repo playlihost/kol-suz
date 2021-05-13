@@ -9,20 +9,20 @@ exports.run = (client, message) => {
     )
     .setDescription(
       `Toplamda Botta **${client.commands.size}** Adet Komut Bulunuyor!` +
-        "\n\n `n!botbilgi`= **Yazarak Botun İstatistiklerine Ulaşa Bilirsiniz.**"
+        "\n\n `!örnek`= **Yazarak Botun İstatistiklerine Ulaşa Bilirsiniz.**"
     )
     .addField(
       `:boom:➤ Komutlar`,
       `
  
 
-:white_small_square: | **n!logomenü:** Kendinize özel logo yapma komutlarını gösterir
-:white_small_square: | **n!avatar:** Kendi avatarınızı gösterir yada etiketlediğiniz kişinin avatarını gösterir
-:white_small_square: | **n!ping:** Botun pingini gösterir
-:white_small_square: | **n!sunucubilgi:** bulunduğunuz sunucunun bilgisini gösterir
-:white_small_square: | **n!sunucuresmi:** olduğunuz sunucunun resmini gösterir
-:white_small_square: | **n!yetkilerim:** botun yetkilerini gösterir
-:white_small_square: | **n!profil:** istediğiniz kişinin profil bilgilerini gösterir
+:white_small_square: | **!örnek:** Kendinize özel logo yapma komutlarını gösterir
+:white_small_square: | **!örnek:** Kendi avatarınızı gösterir yada etiketlediğiniz kişinin avatarını gösterir
+:white_small_square: | **!örnek:** Botun pingini gösterir
+:white_small_square: | **!örnek:** bulunduğunuz sunucunun bilgisini gösterir
+:white_small_square: | **!örnek:** olduğunuz sunucunun resmini gösterir
+:white_small_square: | **!örnek:** botun yetkilerini gösterir
+:white_small_square: | **!örnek:** istediğiniz kişinin profil bilgilerini gösterir
 `)
 
 
