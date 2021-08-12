@@ -3,7 +3,7 @@ exports.run = (client, message) => {
   const motionEmbed = new Discord.MessageEmbed()
 
     .setAuthor(`${client.user.username} `, client.user.avatarURL)
-    .setColor("RED")
+    .setColor("RANDOM")
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/790999702765961258/791775226186563635/6faf3b2ff385f75cc6b46e61e60c1979.gif"
     )
