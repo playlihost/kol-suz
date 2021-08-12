@@ -22,7 +22,6 @@ exports.run = (client, message) => {
       "Aaa siz çok terlemişsiniz durun size terlik getireyim.",
       "Top ağlarda, ben ağlamaz mıyım ?",
       "Burger King, bende vezir",
-     "BU ŞEKİLDE ARTTIRABİLİRSİNİZ",
     ];
     var espri = virtualdevelopment[Math.floor(Math.random() * virtualdevelopment.length)];
     message.edit(`${espri}`);
