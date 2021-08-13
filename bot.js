@@ -201,6 +201,6 @@ client.on("message", async msg => {
  
     });
 
-client.login(ayarlar.token)
+client.login(ayarlar.google_api)
 
 
