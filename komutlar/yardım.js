@@ -3,26 +3,27 @@ exports.run = (client, message) => {
   const motionEmbed = new Discord.MessageEmbed()
 
     .setAuthor(`${client.user.username} `, client.user.avatarURL)
-    .setColor("RANDOM")
+    .setColor("GRAY")
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/790999702765961258/791775226186563635/6faf3b2ff385f75cc6b46e61e60c1979.gif"
     )
     .setDescription(
-      `Toplamda Botta **${client.commands.size}** Adet Komut Bulunuyor!` +
-        "\n\n `!örnek`= **Yazarak Botun İstatistiklerine Ulaşa Bilirsiniz.**"
+      `Toplamda Botta **9** Adet Komut Bulunuyor!` +
+        "\n\n `!botbilgi`= **Yazarak Botun İstatistiklerine Ulaşa Bilirsiniz.**"
     )
     .addField(
       `:boom:➤ Komutlar`,
       `
  
 
-:white_small_square: | **!örnek:** Kendinize özel logo yapma komutlarını gösterir
-:white_small_square: | **!örnek:** Kendi avatarınızı gösterir yada etiketlediğiniz kişinin avatarını gösterir
-:white_small_square: | **!örnek:** Botun pingini gösterir
-:white_small_square: | **!örnek:** bulunduğunuz sunucunun bilgisini gösterir
-:white_small_square: | **!örnek:** olduğunuz sunucunun resmini gösterir
-:white_small_square: | **!örnek:** botun yetkilerini gösterir
-:white_small_square: | **!örnek:** istediğiniz kişinin profil bilgilerini gösterir
+:white_small_square: | **lb!sil** sohbeti siler
+:white_small_square: | **lb!sil2** lb!sil in gelişmişidir
+:white_small_square: | **lb!oyun** botun oyununa gidersiniz
+:white_small_square: | **lb!yardım** yardımlarını gösterir
+:white_small_square: | **lb!ingilizce** ingilizceyi türkçeye çevirir
+:white_small_square: | **lb!oto** otomatik olarak her dilden türkçeye çevirir
+:white_small_square: | **lb!reklam-engel** reklam engel açar
+:white_small_square: | **lb!küfür-engel** küfür engel açar
 `)
 
 
@@ -35,7 +36,7 @@ exports.run = (client, message) => {
   
   .addField(
       `**:boom:➤ Bağlantılar  **`,
-      `>  » [Destek Sunucusu](https://discord.gg/74MZyfZ24d) \n >  » [Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=791609110658547782&permissions=8&scope=bot) \n > » [Oy Verebilirsiniz](https://top.gg/bot/791609110658547782/vote) `
+      `>  » [Destek Sunucu Yok]() \n >  » [Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=875468682392907817&permissions=8&scope=bot) \n > » [Oy Verebilirsiniz]() `
     )
     .setFooter(
       `
