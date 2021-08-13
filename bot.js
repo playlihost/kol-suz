@@ -167,7 +167,7 @@ client.on("messageUpdate", msg => {
             if (!msg.member.hasPermission("BAN_MEMBERS")) {
                   msg.delete();
                          
-                      return msg.reply('Bu Sunucuda Küfür Filtresi Aktiftir.').then(msg => msg.delete(3000));
+                      return msg.reply('Bu Sunucuda Küfür Filtresi Aktiftir.').then(msg => msg.delete(2));
             }              
           } catch(err) {
             console.log(err);
@@ -202,6 +202,5 @@ client.on("message", async msg => {
     });
 
 client.login(ayarlar.token)
-
 
 
