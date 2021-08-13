@@ -23,5 +23,5 @@ exports.conf = {
 exports.help = {
   name: 'oyun',
   description: 'güncel oyun',
-  usage: 'oyun <soru>'
+  usage: 'oyun <oyun>'
 };
