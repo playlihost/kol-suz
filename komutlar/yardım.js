@@ -36,7 +36,7 @@ exports.run = (client, message) => {
   
   .addField(
       `**:boom:➤ Bağlantılar  **`,
-      `>  » [Destek Sunucu Yok]() \n >  » [Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=875468682392907817&permissions=8&scope=bot) \n > » [Oy Verebilirsiniz]() `
+      `>  » [Destek Sunucusu Yok]() \n >  » [Botun Davet Linki](https://discord.com/api/oauth2/authorize?client_id=875468682392907817&permissions=8&scope=bot) \n > » [Oy verme Yok]() `
     )
     .setFooter(
       `

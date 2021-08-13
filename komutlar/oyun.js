@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const oyunlar = [                  'https://spotted-relieved-board.glitch.me/',                        
+const oyunlar = [                  'https://merciful-salty-rhythm.glitch.me/',                        
 ];
 
 exports.run = function(client, message, args) {
