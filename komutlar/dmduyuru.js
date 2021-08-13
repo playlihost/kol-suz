@@ -1,29 +1,37 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
-exports.run = (client, message, args) => {
-if (message.author.id !=852901768966701107 ) { return; }
-  let mesaj = args.slice(0).join(' ');
-if (mesaj.length < 1) return message.channel.send('Birşey Yazmalısınız');
-  message.delete();
-      const mesajat = new Discord.MessageEmbed()
-      .setColor('RED')
-      .setDescription('' + mesaj + '')
-
-      client.users.cache.forEach(u => {
-u.send(mesajat)
+exports.run = function(client, message, args) {
+  
+  if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(`Bu komutu kullanabilmek için **Mesajları Yönet** iznine sahip olmalısın!`);
+  
+if(isNaN(args[0])) {
+  var errembed = new Discord.MessageEmbed()
+    .setColor("GREEN")
+    .addField(`Yanlış Kullanım!`, `Bir rakam yazmalısın!`)
+    .addField(`Doğru Kullanım:`, `${ayarlar.prefix}sil2 <temizlenecek mesaj sayısı>`)
+return message.channel.send(errembed);
+}
+  
+if (args[0] < 2) return message.reply("**2** adetten az mesaj silemem!")
+if (args[0] > 200) return message.reply("**200** adetten fazla mesaj silemem!")
+  
+message.channel.bulkDelete(args[0]).then(deletedMessages => {
+if (deletedMessages.size < 2) return message.reply("Hiç mesaj silemedim! _(**14** günden önceki mesajları silemem!)_");
 })
+message.channel.send(`**${args[0]}** adet mesaj başarıyla silindi!`)
 };
 
 exports.conf = {
-  enabled: true,
-  guildOnly: true,
-  aliases: ['duyur','duyuru'],
-  permLevel: 0
+  enabled: true, 
+  guildOnly: false, 
+  aliases: ["sil2", "mesaj-sil2", "mesajları-sil2"],
+  permLevel: `Mesajları yönet yetkisine sahip olmak gerekir.`
 };
 
 exports.help = {
-  name: 'dmduyuru',
-  description: 'İstediğiniz şeyi bota duyurtur.',
-  usage: 'duyuru [duyurmak istediğiniz şey]'
+  name: 'sil2',
+  category: 'moderasyon',
+  description: 'Belirtilen miktarda mesaj siler.',
+  usage: '.sil2 <miktar>'
 };

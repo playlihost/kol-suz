@@ -7,7 +7,7 @@ exports.run = function(client, message, args) {
   
 if(isNaN(args[0])) {
   var errembed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("DARK_GREEN")
     .addField(`Yanlış Kullanım!`, `Bir rakam yazmalısın!`)
     .addField(`Doğru Kullanım:`, `${ayarlar.prefix}sil <temizlenecek mesaj sayısı>`)
 return message.channel.send(errembed);
