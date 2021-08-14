@@ -7,7 +7,7 @@ const ayarlar=require("./ayarlar.json");
 const express = require('express');
 
 const app = express()
-app.get('/', (req, res) => res.send("Bot Aktif"))
+app.get('/', (req, res) => res.send("Kolsuz Bot Emrinizde"))
 app.listen(process.env.PORT, () => console.log('Port ayarlandı: ' + process.env.PORT))
 
 
